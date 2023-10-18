@@ -1,0 +1,16 @@
+header.header {
+  border: 1px solid var(--primary-color-75);
+}
+
+.header .header__wrapper {
+  padding: 2rem;
+}
+
+.header nav {
+  display: none;
+  border: 1px solid var(--dark-color-50);
+}
+
+.header nav ul {
+  border: 1px solid var(--primary-color-100);
+}
