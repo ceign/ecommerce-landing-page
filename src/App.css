@@ -83,6 +83,7 @@
   --button-m-font-size: 18px;
   --button-m-font-weight: 400;
   --button-m-line-height: normal;
+  --button-m-text-style: normal;
   --button-m-text-transform: capitalize;
 
   /* Button  Large */
@@ -136,6 +137,12 @@
   --overline-text-transform: uppercase;
 }
 
+@media (width < 62em) {
+  :root {
+    --button-m-font-size: 16px;
+  }
+}
+
 
 /********************************************
 *                 Colors                    *
@@ -182,4 +189,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.button-m {
+  font: var(--button-m-text-style) var(--button-m-font-weight) var(--button-m-font-size) / var(--button-m-line-height) var(--font-primary);
+  color: var(--button-m-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

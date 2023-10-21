@@ -2,7 +2,7 @@ import "../App.css";
 import "./Header.css";
 import Logo from "../assets/logo.png";
 import { FaShoppingBag } from "react-icons/fa";
-import { BiSolidUser } from "react-icons/bi";
+import { FaUser } from "react-icons/fa";
 import { GrSearch } from "react-icons/gr";
 
 const Header = () => {
@@ -27,18 +27,20 @@ const Header = () => {
 
           <div className="header__buttons">
             <div className="header__account">
-              <button>
+              <button className="button-m">
                 <span>
-                  <BiSolidUser />
-                </span>Cuenta
+                  <FaUser />
+                </span>
+                Cuenta
               </button>
             </div>
 
             <div className="header__shopping-cart">
-              <button>
+              <button className="button-m">
                 <span>
                   <FaShoppingBag />
-                </span>Mis Compras
+                </span>
+                Cesta
               </button>
             </div>
           </div>
