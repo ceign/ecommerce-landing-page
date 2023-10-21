@@ -1,6 +1,7 @@
 /********************************************
 *                 Typography                *
 ********************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400;500&display=swap');
 
 :root {
@@ -115,12 +116,20 @@
   --span-03-line-height: normal;
   --span-03-text-transform: capitalize;
 
-  /* Span 04 */
-  --span-04-color: var(--dark-color-100);
-  --span-04-font-size: 14px;
-  --span-04-font-weight: 400;
-  --span-04-line-height: normal;
-  --span-04-text-transform: capitalize;
+  /* Navigation 01 */
+  --navigation-01-color: var(--dark-color-100);
+  --navigation-01-font-size: 16px;
+  --navigation-01-font-weight: 400;
+  --navigation-01-line-height: normal;
+  --navigation-01-text-style: normal;
+  --navigation-01-text-transform: capitalize;
+
+  /* Navigation 02 */
+  --navigation-02-color: var(--dark-color-100);
+  --navigation-02-font-size: 14px;
+  --navigation-02-font-weight: 400;
+  --navigation-02-line-height: normal;
+  --navigation-02-text-transform: capitalize;
 
   /* Input Text */
   --input-text-color: var(--dark-color-100);
@@ -142,7 +151,6 @@
     --button-m-font-size: 16px;
   }
 }
-
 
 /********************************************
 *                 Colors                    *
@@ -189,6 +197,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.navigation-01__text {
+  font: var(--navigation-01-text-style) var(--navigation-01-font-weight) var(--navigation-01-font-size) / var(--navigation-01-line-height) var(--font-secondary);
+  color: var(--navigation-01-color);
 }
 
 .button-m {
