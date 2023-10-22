@@ -109,6 +109,11 @@ header.header {
   margin: 0 8px 0 0;
 }
 
+.header__buttons :is(.header__account, .header__shopping-cart)>button:hover {
+  color: var(--primary-color-100);
+  border: 1px solid var(--primary-color-100);
+}
+
 /********************************************
 *              Header Navigation            *
 ********************************************/
@@ -137,7 +142,6 @@ header.header {
 .header__navigation nav>ul li a:hover {
   color: var(--primary-color-100);
 }
-
 
 @media (width > 62em) {
   .header .header__wrapper {
