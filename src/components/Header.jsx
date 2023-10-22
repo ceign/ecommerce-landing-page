@@ -9,10 +9,10 @@ import { GrSearch } from "react-icons/gr";
 const Header = () => {
 
   // Hide navigation on mobile
-  const [showNavigation, setShowNavigation] = useState(window.innerWidth > 1024);
+  const [showNavigation, setShowNavigation] = useState(window.innerWidth > 992);
 
   useEffect(() => {
-    const handleResize = () => setShowNavigation(window.innerWidth > 1024);
+    const handleResize = () => setShowNavigation(window.innerWidth > 992);
     window.addEventListener("resize", handleResize);
 
     return () => {
