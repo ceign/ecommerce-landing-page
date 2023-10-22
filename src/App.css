@@ -63,6 +63,7 @@
   --body-01-font-size: 74px;
   --body-01-font-weight: 300;
   --body-01-line-height: 54px;
+  --body-01-text-style: normal;
   --body-01-text-transform: capitalize;
 
   /* Body 02 */
@@ -88,10 +89,10 @@
   --button-m-text-transform: capitalize;
 
   /* Button  Large */
-  --button-l-color: var(--dark-color-100);
-  --button-l-font-size: 30px;
+  --button-l-font-size: 28px;
   --button-l-font-weight: 400;
   --button-l-line-height: normal;
+  --button-l-text-style: normal;
   --button-l-text-transform: capitalize;
 
   /* Span 01 */
@@ -144,11 +145,22 @@
   --overline-font-weight: 600;
   --overline-line-height: normal;
   --overline-text-transform: uppercase;
+
+  /* Paragraph */
+  --paragraph-l-color: var(--dark-color-100);
+  --paragraph-l-font-size: 30px;
+  --paragraph-l-font-weight: 400;
+  --paragraph-l-line-height: 1.35;
+  --paragraph-l-text-style: normal;
+  --paragraph-l-text-transform: capitalize;
 }
 
 @media (width < 62em) {
   :root {
     --button-m-font-size: 16px;
+    --button-l-font-size: 24px;
+    --body-01-font-size: 52px;
+    --paragraph-l-font-size: 24px;
   }
 }
 
@@ -199,7 +211,7 @@
   box-sizing: border-box;
 }
 
-.navigation-01__text {
+.navigation-01 {
   font: var(--navigation-01-text-style) var(--navigation-01-font-weight) var(--navigation-01-font-size) / var(--navigation-01-line-height) var(--font-secondary);
   color: var(--navigation-01-color);
 }
@@ -207,7 +219,18 @@
 .button-m {
   font: var(--button-m-text-style) var(--button-m-font-weight) var(--button-m-font-size) / var(--button-m-line-height) var(--font-primary);
   color: var(--button-m-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.button-l {
+  font: var(--button-l-text-style) var(--button-l-font-weight) var(--button-l-font-size) / var(--button-l-line-height) var(--font-primary);
+}
+
+.body-01 {
+  font: var(--body-01-text-style) var(--body-01-font-weight) var(--body-01-font-size) / var(--body-01-line-height) var(--font-primary);
+  color: var(--body-01-color);
+}
+
+.paragraph-l {
+  font: var(--paragraph-l-text-style) var(--paragraph-l-font-weight) var(--paragraph-l-font-size) / var(--paragraph-l-line-height) var(--font-primary);
+  color: var(--paragraph-l-color);
 }

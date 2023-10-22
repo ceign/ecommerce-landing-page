@@ -18,7 +18,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     }
-  });
+  }, []);
 
   return (
     <header className="header">
@@ -65,25 +65,25 @@ const Header = () => {
             <nav>
               <ul>
                 <li>
-                  <a href="#" className="navigation-01__text">Joyas y Accesorios</a>
+                  <a href="#" className="navigation-01">Joyas y Accesorios</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01__text">Ropa y Zapatos</a>
+                  <a href="#" className="navigation-01">Ropa y Zapatos</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01__text">Casa y Decoración</a>
+                  <a href="#" className="navigation-01">Casa y Decoración</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01__text">Fiesta y Bodas</a>
+                  <a href="#" className="navigation-01">Fiesta y Bodas</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01__text">Juegos y Entretenimiento</a>
+                  <a href="#" className="navigation-01">Juegos y Entretenimiento</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01__text">Arte y Coleccionables</a>
+                  <a href="#" className="navigation-01">Arte y Coleccionables</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01__text">Herramientas y Manualidades</a>
+                  <a href="#" className="navigation-01">Herramientas y Manualidades</a>
                 </li>
               </ul>
             </nav>

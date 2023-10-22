@@ -1,0 +1,16 @@
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--white-color-100);
+  background-color: var(--black-color-100);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: .2s background-color ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-color-100);
+}
