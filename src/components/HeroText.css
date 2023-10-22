@@ -3,5 +3,24 @@
 }
 
 .hero-text__title {
+  text-align: center;
   margin: 0 0 24px;
+}
+
+.hero-text__paragraph {
+  text-align: center;
+}
+
+@media (width > 62em) {
+  .hero-text__wrapper {
+    max-width: 50%;
+  }
+
+  :is(.hero-text__title, .hero-text__paragraph) {
+    text-align: left;
+  }
+
+  .hero-text__title {
+    margin: 0 0 48px;
+  }
 }

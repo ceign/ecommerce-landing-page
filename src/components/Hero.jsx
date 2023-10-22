@@ -7,8 +7,10 @@ const Hero = () => {
   return (
     <>
       <section className="hero">
-        <HeroText />
-        <CTAButton />
+        <div className="hero__wrapper">
+          <HeroText />
+          <CTAButton />
+        </div>
       </section>
     </>
   )

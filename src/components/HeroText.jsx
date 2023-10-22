@@ -7,7 +7,7 @@ const HeroText = () => {
       <div className="hero-text__wrapper">
         <h1 className="hero-text__title body-01">Collections</h1>
 
-        <p className="paragraph-l">
+        <p className="hero-text__paragraph paragraph-l">
           Tu pasión por las marcas, nuestras colecciones ilimitadas. ¡Comienza a explorar!
         </p>
       </div>

@@ -1,3 +1,31 @@
 section.hero {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero .hero__wrapper {
   padding: 2rem;
+}
+
+@media (width > 62em) {
+  .hero .hero__wrapper {
+    padding: 100px 1rem;
+  }
+}
+
+@media (width > 75em) {
+  section.hero {
+    max-width: 1200px;
+  }
+
+  .hero .hero__wrapper {
+    padding: 142px 1rem;
+  }
+}
+
+@media (width > 100em) {
+  section.hero {
+    max-width: 1400px;
+  }
 }
