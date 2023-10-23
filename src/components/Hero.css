@@ -1,31 +1,30 @@
 section.hero {
   width: 100%;
-  max-width: 1000px;
-  margin: auto;
+  background-color: var(--black-color-05);
 }
 
 .hero .hero__wrapper {
+  display: flex;
   padding: 2rem;
+  margin: auto;
 }
 
 @media (width > 62em) {
   .hero .hero__wrapper {
+    max-width: 1000px;
     padding: 100px 1rem;
   }
 }
 
 @media (width > 75em) {
-  section.hero {
-    max-width: 1200px;
-  }
-
   .hero .hero__wrapper {
-    padding: 142px 1rem;
+    max-width: 1200px;
+    padding: 142px 1rem 1rem;
   }
 }
 
 @media (width > 100em) {
-  section.hero {
+  .hero .hero__wrapper {
     max-width: 1400px;
   }
 }

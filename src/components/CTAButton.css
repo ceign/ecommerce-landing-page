@@ -9,13 +9,14 @@
   transition: .2s background-color ease-in-out;
 }
 
-.hero-button {
+.hero__button {
   width: 100%;
   color: var(--white-color-100);
   background-color: var(--black-color-100);
+  margin: 66px 0 0;
 }
 
-.hero-button span {
+.hero__button span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -23,17 +24,17 @@
   height: 20px
 }
 
-.hero-button span>svg {
+.hero__button span>svg {
   width: 100%;
   height: 100%;
 }
 
-.hero-button:hover {
+.hero__button:hover {
   background-color: var(--primary-color-100);
 }
 
 @media (width > 62em) {
-  .hero-button {
+  .hero__button {
     width: auto;
   }
 }

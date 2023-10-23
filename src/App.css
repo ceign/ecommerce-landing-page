@@ -160,6 +160,11 @@
     --button-m-font-size: 16px;
     --button-l-font-size: 24px;
     --body-01-font-size: 52px;
+  }
+}
+
+@media (width < 75em) {
+  :root {
     --paragraph-l-font-size: 24px;
   }
 }
