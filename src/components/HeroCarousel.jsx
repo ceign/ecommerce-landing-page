@@ -24,6 +24,7 @@ const HeroCarousel = () => {
           <div className="hero__carousel-wrapper">
             <figure>
               <img src={Carousel} alt="" />
+              <span></span>
             </figure>
           </div>
         </div>
