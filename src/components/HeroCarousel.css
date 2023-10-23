@@ -1,0 +1,34 @@
+.hero__carousel {
+  flex: 1;
+}
+
+.hero__carousel .hero__carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: calc(100% - 380px);
+}
+
+.hero__carousel .hero__carousel-wrapper figure {
+  width: 320px;
+  height: 420px;
+}
+
+.hero__carousel .hero__carousel-wrapper figure>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 120px 0 120px 0;
+}
+
+@media (width > 75em) {
+  .hero__carousel .hero__carousel-wrapper {
+    bottom: calc(100% - 460px);
+  }
+
+  .hero__carousel .hero__carousel-wrapper figure {
+    width: 424px;
+    height: 540px;
+  }
+}

@@ -3,7 +3,7 @@ import { FaShoppingBag } from "react-icons/fa";
 
 const CTAButton = () => {
   return (
-    <button className="hero-button cta-button button-l">
+    <button className="hero__button cta-button button-l">
       <span>
         <FaShoppingBag />
       </span>
