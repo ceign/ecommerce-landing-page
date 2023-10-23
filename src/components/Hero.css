@@ -5,7 +5,7 @@ section.hero {
 
 .hero .hero__wrapper {
   display: flex;
-  padding: 2rem;
+  padding: 2rem 2rem 5rem;
   margin: auto;
 }
 
@@ -24,6 +24,30 @@ section.hero {
 }
 
 @media (width > 100em) {
+  section.hero {
+    position: relative;
+  }
+
+  section.hero::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 180px;
+    width: 170px;
+    height: 260px;
+    background: url("../assets/hero-right-decoration.svg") no-repeat center / contain;
+  }
+
+  section.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    width: 100px;
+    height: 160px;
+    background: url("../assets/hero-left-decoration.svg") no-repeat center / contain;
+  }
+
   .hero .hero__wrapper {
     max-width: 1400px;
   }
