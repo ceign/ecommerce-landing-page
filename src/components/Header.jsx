@@ -65,25 +65,25 @@ const Header = () => {
             <nav>
               <ul>
                 <li>
-                  <a href="#" className="navigation-01">Joyas y Accesorios</a>
+                  <a href="#" className="navigation-01">Joyas y  <br />Accesorios</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Ropa y Zapatos</a>
+                  <a href="#" className="navigation-01">Ropa y <br />Zapatos</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Casa y Decoración</a>
+                  <a href="#" className="navigation-01">Casa y <br />Decoración</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Fiesta y Bodas</a>
+                  <a href="#" className="navigation-01">Fiesta y <br />Bodas</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Juegos y Entretenimiento</a>
+                  <a href="#" className="navigation-01">Juegos y <br />Entretenimiento</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Arte y Coleccionables</a>
+                  <a href="#" className="navigation-01">Arte y <br />Coleccionables</a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Herramientas y Manualidades</a>
+                  <a href="#" className="navigation-01">Herramientas y <br />Manualidades</a>
                 </li>
               </ul>
             </nav>
