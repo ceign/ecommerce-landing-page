@@ -4,7 +4,7 @@ section.partners {
 
 .partners .partners__wrapper {
   max-width: 400px;
-  padding: 1rem;
+  padding: 4rem 1rem;
   margin: 0 auto;
 }
 
@@ -40,7 +40,6 @@ section.partners {
 @media (width > 62em) {
   .partners .partners__wrapper {
     max-width: 940px;
-    padding: 2rem 1rem;
   }
 
   .partners ul {
