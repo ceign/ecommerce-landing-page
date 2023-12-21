@@ -4,14 +4,30 @@ section.gallery {
 
 .gallery .gallery__wrapper {
   max-width: 640px;
-  margin: 1rem auto 0;
-  padding: 2rem;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
 }
 
 .gallery .gallery__main {
   width: 100%;
   height: 100%;
 }
+
+.gallery .gallery__main figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 660px;
+}
+
+.gallery .gallery__main figure>canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 
 .gallery .gallery__main figure img {
   display: block;
@@ -33,11 +49,16 @@ section.gallery {
   flex-basis: calc(50% - .5rem);
 }
 
+.gallery__items-wrapper li figure {
+  height: 320px;
+}
+
 .gallery__items-wrapper li figure img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 @media (width > 62em) {
@@ -45,7 +66,7 @@ section.gallery {
     display: flex;
     gap: 1rem;
     max-width: 940px;
-    padding: 0 1rem 2rem;
+    padding: 0 1rem 4rem;
     margin: 0 auto;
   }
 
@@ -65,20 +86,42 @@ section.gallery {
   }
 
   .gallery .gallery__main figure {
-    width: 100%;
     min-width: 450px;
-    height: 100%;
+    min-height: 680px;
   }
 }
 
 @media (width > 75em) {
   .gallery .gallery__wrapper {
-    max-width: 1200px;
+    max-width: 1100px;
+  }
+
+  .gallery .gallery__main {
+    position: relative;
+  }
+
+  .gallery .gallery__main::before {
+    content: 'Explora lo nuevo y atrévete';
+    position: absolute;
+    left: -8px;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    font: var(--body-02-font-weight) var(--body-02-font-size)/var(--body-02-line-height) var(--font-primary);
+    text-transform: var(--body-02-text-transform);
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    letter-spacing: 1px;
+    z-index: 1;
   }
 
   .gallery .gallery__main figure {
     min-width: 550px;
     height: 550px;
+  }
+
+  .gallery__items-wrapper li figure {
+    height: calc(340px - 0.5rem);
   }
 }
 
@@ -89,6 +132,10 @@ section.gallery {
 
   .gallery .gallery__main figure {
     min-width: 650px;
-    height: 650px;
+    height: 940px;
+  }
+
+  .gallery__items-wrapper li figure {
+    height: calc(470px - 0.5rem);
   }
 }
