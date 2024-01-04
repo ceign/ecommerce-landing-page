@@ -13,16 +13,34 @@ const Gallery = () => {
 
   useEffect(() => {
     if (figureRef.current) {
-      new hoverEffect({
-        parent: figureRef.current,
-        intensity: 0.2,
-        image1: Model1,
-        image2: Model2,
-        displacementImage: Model2,
-        imagesRatio: 1.5,
-        speedIn: 2,
-        speedOut: 2,
-        hover: true
+      const img1 = new Image();
+      const img2 = new Image();
+      img1.src = Model1;
+      img2.src = Model2;
+
+      Promise.all([
+        new Promise((resolve) => {
+          img1.onload = () => resolve();
+        }),
+        new Promise((resolve) => {
+          img2.onload = () => resolve();
+        }),
+      ]).then(() => {
+        const ratio1 = img1.naturalWidth / img1.naturalHeight;
+        const ratio2 = img2.naturalWidth / img2.naturalHeight;
+        const averageRatio = (ratio1 + ratio2) / 1;
+
+        new hoverEffect({
+          parent: figureRef.current,
+          intensity: 0.2,
+          image1: Model1,
+          image2: Model2,
+          displacementImage: Model2,
+          imagesRatio: averageRatio,
+          speedIn: 2,
+          speedOut: 2,
+          hover: true
+        });
       });
     }
   }, []);
