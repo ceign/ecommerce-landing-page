@@ -19,7 +19,7 @@ const Gallery = () => {
         image1: Model1,
         image2: Model2,
         displacementImage: Model2,
-        imagesRatio: -1.5,
+        imagesRatio: 1.5,
         speedIn: 2,
         speedOut: 2,
         hover: true
