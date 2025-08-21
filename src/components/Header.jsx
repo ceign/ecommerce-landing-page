@@ -28,12 +28,12 @@ const Header = () => {
             <span>
               <GrSearch />
             </span>
-            <input type="text" placeholder="Buscar" />
+            <input type="text" placeholder="Buscar" aria-label="Buscar" />
           </div>
 
           <div className="header__logo">
             <figure>
-              <a href="#">
+              <a href="#" onClick={(e) => { e.preventDefault(); }}>
                 <img src={Logo} alt="Logo" className="header__logo-image" />
               </a>
             </figure>
@@ -65,27 +65,42 @@ const Header = () => {
             <nav>
               <ul>
                 <li>
-                  <a href="#" className="navigation-01">Joyas y  <br />Accesorios</a>
+                  <a href="#" onClick={(e) => { e.preventDefault(); }} className="navigation-01">
+                    Joyas y <br />Accesorios
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Ropa y <br />Zapatos</a>
+                  <a href="#" onClick={(e) => { e.preventDefault(); }} className="navigation-01">
+                    Ropa y <br />Zapatos
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Casa y <br />Decoración</a>
+                  <a href="#" onClick={(e) => { e.preventDefault(); }} className="navigation-01">
+                    Casa y <br />Decoración
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Fiesta y <br />Bodas</a>
+                  <a href="#" onClick={(e) => { e.preventDefault(); }} className="navigation-01">
+                    Fiesta y <br />Bodas
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Juegos y <br />Entretenimiento</a>
+                  <a href="#" onClick={(e) => { e.preventDefault(); }} className="navigation-01">
+                    Juegos y <br />Entretenimiento
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Arte y <br />Coleccionables</a>
+                  <a href="#" onClick={(e) => { e.preventDefault(); }} className="navigation-01">
+                    Arte y <br />Coleccionables
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="navigation-01">Herramientas y <br />Manualidades</a>
+                  <a href="#" onClick={(e) => { e.preventDefault(); }} className="navigation-01">
+                    Herramientas y <br />Manualidades
+                  </a>
                 </li>
               </ul>
+
             </nav>
           </div>
         )}
