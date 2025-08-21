@@ -1,7 +1,7 @@
 import "../App.css";
 import "./HeroText.css";
 import CTAButton from "./CTAButton";
-
+import { FaShoppingBag } from "react-icons/fa";
 
 const HeroText = () => {
   return (
@@ -13,7 +13,7 @@ const HeroText = () => {
           Tu pasión por las marcas, nuestras colecciones ilimitadas. ¡Comienza a explorar!
         </p>
 
-        <CTAButton />
+        <CTAButton text="Comprar Ahora" Icon={FaShoppingBag} />
       </div>
     </div>
   )
