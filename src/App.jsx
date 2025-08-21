@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Partners from "./components/Partners";
 import Gallery from "./components/Gallery";
+import ProductGrid from "./components/ProductGrid";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Partners />
       <Gallery />
+      <ProductGrid />
     </>
   );
 }
