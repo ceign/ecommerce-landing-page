@@ -3,7 +3,10 @@ import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import "../App.css";
 import "./HeroCarousel.css";
-import Carousel from "../assets/hero-carousel.jpeg";
+import carousel1 from "../assets/hero-carousel-1.jpg";
+import carousel2 from "../assets/hero-carousel-2.jpg";
+import carousel3 from "../assets/hero-carousel-3.jpg";
+
 
 const HeroCarousel = () => {
 
@@ -61,9 +64,9 @@ const HeroCarousel = () => {
         <div className="hero__carousel">
           <div className="hero__carousel-wrapper">
             <figure ref={sliderRef} className="keen-slider">
-              <img className="keen-slider__slide number-slide1" src={Carousel} alt="" />
-              <img className="keen-slider__slide number-slide2" src={Carousel} alt="" />
-              <img className="keen-slider__slide number-slide3" src={Carousel} alt="" />
+              <img className="keen-slider__slide number-slide1" src={carousel1} alt="" />
+              <img className="keen-slider__slide number-slide2" src={carousel2} alt="" />
+              <img className="keen-slider__slide number-slide3" src={carousel3} alt="" />
             </figure>
             <span></span>
           </div>
