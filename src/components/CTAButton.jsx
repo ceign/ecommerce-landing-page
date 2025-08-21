@@ -1,15 +1,16 @@
 import "./CTAButton.css";
-import { FaShoppingBag } from "react-icons/fa";
 
-const CTAButton = () => {
+const CTAButton = ({ text, Icon }) => {
   return (
     <button className="hero__button cta-button button-l">
-      <span>
-        <FaShoppingBag />
-      </span>
-      Comprar Ahora
+      {Icon && (
+        <span className="cta-button__icon">
+          <Icon />
+        </span>
+      )}
+      {text}
     </button>
-  )
-}
+  );
+};
 
-export default CTAButton
+export default CTAButton;
