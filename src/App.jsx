@@ -4,6 +4,7 @@ import Partners from "./components/Partners";
 import Gallery from "./components/Gallery";
 import ProductGrid from "./components/ProductGrid";
 import Banner from "./components/Banner";
+import BestSellers from "./components/BestSellers";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Gallery />
       <ProductGrid />
       <Banner />
+      <BestSellers />
     </>
   );
 }
