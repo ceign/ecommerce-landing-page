@@ -1,26 +1,22 @@
-.hero-text__wrapper {
-  padding: 0 0 66px;
+.hero__text {
+  flex: 1;
 }
 
-.hero-text__title {
+.hero__text-title {
   text-align: center;
   margin: 0 0 24px;
 }
 
-.hero-text__paragraph {
+.hero__text-paragraph {
   text-align: center;
 }
 
 @media (width > 62em) {
-  .hero-text__wrapper {
-    max-width: 50%;
-  }
-
-  :is(.hero-text__title, .hero-text__paragraph) {
+  :is(.hero__text-title, .hero__text-paragraph) {
     text-align: left;
   }
 
-  .hero-text__title {
+  .hero__text-title {
     margin: 0 0 48px;
   }
 }

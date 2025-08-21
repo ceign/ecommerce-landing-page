@@ -1,31 +1,54 @@
 section.hero {
   width: 100%;
-  max-width: 1000px;
-  margin: auto;
+  background-color: var(--black-color-05);
 }
 
 .hero .hero__wrapper {
-  padding: 2rem;
+  display: flex;
+  padding: 2rem 2rem 5rem;
+  margin: auto;
 }
 
 @media (width > 62em) {
   .hero .hero__wrapper {
+    max-width: 1000px;
     padding: 100px 1rem;
   }
 }
 
 @media (width > 75em) {
-  section.hero {
-    max-width: 1200px;
-  }
-
   .hero .hero__wrapper {
-    padding: 142px 1rem;
+    max-width: 1200px;
+    padding: 142px 1rem 1rem;
   }
 }
 
 @media (width > 100em) {
   section.hero {
+    position: relative;
+  }
+
+  section.hero::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 180px;
+    width: 170px;
+    height: 260px;
+    background: url("../assets/hero-right-decoration.svg") no-repeat center / contain;
+  }
+
+  section.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    width: 100px;
+    height: 160px;
+    background: url("../assets/hero-left-decoration.svg") no-repeat center / contain;
+  }
+
+  .hero .hero__wrapper {
     max-width: 1400px;
   }
 }

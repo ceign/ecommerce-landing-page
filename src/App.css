@@ -69,7 +69,7 @@
   /* Body 02 */
   --body-02-color: var(--dark-color-100);
   --body-02-font-size: 34px;
-  --body-02-font-weight: 400;
+  --body-02-font-weight: 600;
   --body-02-line-height: normal;
   --body-02-text-transform: uppercase;
 
@@ -160,6 +160,11 @@
     --button-m-font-size: 16px;
     --button-l-font-size: 24px;
     --body-01-font-size: 52px;
+  }
+}
+
+@media (width < 75em) {
+  :root {
     --paragraph-l-font-size: 24px;
   }
 }
@@ -233,4 +238,9 @@
 .paragraph-l {
   font: var(--paragraph-l-text-style) var(--paragraph-l-font-weight) var(--paragraph-l-font-size) / var(--paragraph-l-line-height) var(--font-primary);
   color: var(--paragraph-l-color);
+}
+
+.card {
+  font: var(--body-02-font-weight) var(--body-02-font-size) / var(--body-02-line-height) var(--font-secondary);
+  color: var(--black-color-100);
 }
