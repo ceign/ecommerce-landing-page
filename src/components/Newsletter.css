@@ -1,0 +1,128 @@
+section.newsletter {
+  background-color: var(--dark-color-10);
+}
+
+.newsletter .newsletter__wrapper {
+  padding: 6rem 2rem;
+}
+
+.newsletter .newsletter__wrapper h2 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter__subtitle {
+  margin-top: 4rem;
+}
+
+.newsletter .newsletter__image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  gap: .5rem;
+  margin-top: 4rem;
+}
+
+.newsletter__image-item {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.newsletter__image-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.newsletter__overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.newsletter__icon {
+  color: var(--white-color-100);
+  font-size: 2rem;
+}
+
+.newsletter__image-item:hover .newsletter__overlay {
+  opacity: 1;
+}
+
+.newsletter__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.newsletter__input {
+  min-width: 250px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid var(--dark-color-100);
+  background: transparent;
+  outline: none;
+}
+
+.newsletter__submit {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--dark-color-100);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.newsletter__submit:hover {
+  background: var(--dark-color-100);
+  color: var(--white-color-100);
+}
+
+@media (width > 62em) {
+  .newsletter .newsletter__wrapper {
+    max-width: 940px;
+    margin: auto;
+  }
+
+  .newsletter .newsletter__image-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .newsletter__input {
+    min-width: 500px;
+  }
+}
+
+@media (width > 75em) {
+  .newsletter .newsletter__wrapper {
+    max-width: 1100px;
+    padding: 6rem 1rem;
+  }
+}
+
+@media (width > 100em) {
+  .newsletter .newsletter__wrapper {
+    max-width: 1400px;
+    padding: 8rem 1rem;
+  }
+}
