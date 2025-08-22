@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => (
               product.alt
                 ? product.alt
                 : product.name
-                  ? `Image of ${product.name}`
+                  ? `Imagen de ${product.name}`
                   : ""
             }
           />
