@@ -64,9 +64,9 @@ const HeroCarousel = () => {
         <div className="hero__carousel">
           <div className="hero__carousel-wrapper">
             <figure ref={sliderRef} className="keen-slider">
-              <img className="keen-slider__slide number-slide1" src={carousel1} alt="" />
-              <img className="keen-slider__slide number-slide2" src={carousel2} alt="" />
-              <img className="keen-slider__slide number-slide3" src={carousel3} alt="" />
+              <img className="keen-slider__slide number-slide1" src={carousel1} alt="Imagen 1" />
+              <img className="keen-slider__slide number-slide2" src={carousel2} alt="Imagen 2" />
+              <img className="keen-slider__slide number-slide3" src={carousel3} alt="Imagen 3" />
             </figure>
             <span></span>
           </div>

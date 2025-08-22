@@ -6,6 +6,7 @@ import ProductGrid from "./components/ProductGrid";
 import Banner from "./components/Banner";
 import BestSellers from "./components/BestSellers";
 import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Banner />
       <BestSellers />
       <Newsletter />
+      <Footer />
     </>
   );
 }

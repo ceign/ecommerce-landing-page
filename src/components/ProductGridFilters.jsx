@@ -3,7 +3,7 @@ import "./ProductGridFilters.css";
 
 const ProductGridFilters = () => (
   <div className="product-grid__filters-bar">
-    <nav className="product-grid__filters" aria-label="Product filters">
+    <nav className="product-grid__filters" aria-label="Filtros de productos">
       <ul role="tablist">
         <li>
           <button role="tab" aria-selected="true" className="active">
@@ -20,7 +20,7 @@ const ProductGridFilters = () => (
           <button role="tab" aria-selected="false">Entreno</button>
         </li>
       </ul>
-      <button className="product-grid__filter-btn" aria-label="Open filter options">
+      <button className="product-grid__filter-btn" aria-label="Abrir filtros">
         <FiFilter style={{ marginRight: "0.5rem", fontSize: "1rem", verticalAlign: "middle" }} />
         Filtros
       </button>
